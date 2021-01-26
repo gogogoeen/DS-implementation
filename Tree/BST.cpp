@@ -1,4 +1,4 @@
-#include "Tree.hpp"
+#include "BST.hpp"
 #include <iostream>
 using namespace std;
 // implementation of a binary tree class
