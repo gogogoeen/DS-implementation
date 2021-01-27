@@ -35,12 +35,12 @@ public:
     // right rotate the tree
     void right_rotate();
 
-private: 
+protected: 
     TreeNode *root;
     int TreeHeight(TreeNode* root);
     bool TreeSearch(TreeNode* root, int key); 
-    TreeNode* TreeInsert(TreeNode* root, int key);
-    TreeNode* TreeDelete(TreeNode* root, int key);
+    virtual TreeNode* TreeInsert(TreeNode* root, int key);
+    virtual TreeNode* TreeDelete(TreeNode* root, int key);
     void FreeTree(TreeNode* root);
     TreeNode* joinTree(TreeNode* root1, TreeNode* root2);
     void preorder_print(TreeNode* root);
