@@ -34,6 +34,9 @@ public:
     void left_rotate();
     // right rotate the tree
     void right_rotate();
+    // print the tree
+    void showTree();
+
 
 protected: 
     TreeNode *root;
@@ -48,6 +51,7 @@ protected:
     void postorder_print(TreeNode* root);  
     TreeNode* left_rotate(TreeNode* root);
     TreeNode* right_rotate(TreeNode* root); 
+    void showTreeR(TreeNode* root, int depth);
     
 };
 

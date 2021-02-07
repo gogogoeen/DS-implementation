@@ -12,6 +12,7 @@ int main() {
     tree -> TreeInsert(25);
     tree -> TreeInsert(17);
     tree -> TreeInsert(20);
+    tree -> showTree();
     tree -> inorder_print();
     cout << "left rotation" << endl;
     //tree -> left_rotate();
@@ -22,4 +23,5 @@ int main() {
     cout << "afterdeletion" << endl;
     tree -> TreeDelete(15);
     tree -> inorder_print();
+    
 }

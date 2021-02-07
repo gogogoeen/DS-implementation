@@ -153,6 +153,26 @@ TreeNode* BST :: right_rotate(TreeNode* root) {
     return ptr;
 }
 
+// display Tree sideways
+
+void BST :: showTree() {
+   showTreeR(root, 0);
+}
+
+void BST :: showTreeR(TreeNode* t, int depth) {
+   if (t != NULL) {
+      showTreeR(t -> right, depth+1);
+      int i;
+      for (i = 0; i < depth; i++) {
+	    cout << '\t';            // TAB character
+      }
+      cout << t -> val << endl;
+      showTreeR(t -> left, depth+1);
+   }
+}
+
+
+
 
 
 
